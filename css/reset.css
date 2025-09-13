@@ -1,0 +1,10 @@
+/* seletor universal ou seletor global é usado para fazer o reset (zerar o css da pagina)*/
+*{
+    /* propriedade : valor */
+    margin:0;
+    /* margin zerando toda a margem do site */
+    padding: 0;
+    /* padding é o espaçamento interno da tag */
+    box-sizing: border-box;
+    /* calcula de forma inteligente o estilo */
+}

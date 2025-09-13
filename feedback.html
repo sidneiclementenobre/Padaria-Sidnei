@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <style>
+        body {
+    background-color: #FFF8DC;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    color: #654321;
+    font-family: Brush Script MT;
+    font-size: 60px;
+}
+
+header img {
+    text-align: center;
+    display: block;
+    margin: auto;
+
+}
+
+header {
+    margin: 15px;
+    background-color: #DAA520;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 50px;
+    align-items: center;
+}
+
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #654321;
+}
+
+
+a:hover {
+    background-color: green;
+    color: azure;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+}
+
+.titulo-formulario {
+  color: #654321;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+form {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: gray;
+}
+
+label {
+  font-family: white;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+legend {
+  font-size: 40px;
+}
+
+input [type="text"],
+input [type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+  input [type="submit" value="Enviar"]{
+    color: green;
+  }
+ 
+button {
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Padaria ¨ Sidnei ¨ </h1>
+    <!-- <img src="./images/ai-generated-9426385_640.png" width="150" alt="Logo da Padaria" />-->
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+          <li><a href="./pedidos.html">Pedidos</a></li>
+          <li><a href="./feedback.html">Feedback</a></li>
+          <li><a href="./cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="titulo-formulario">Formulario de Feedback</h1>
+      <form>
+        <fieldset>
+          <legend>Identificação</legend>
+          <label for="nomeCompleto">Nome Completo:</label>
+          <input type="text" id="nomeCompleto" required /><br /><br >
+
+          <label for="E-mail">E-mail:</label>
+          <input type="email" name="e-mail" placeholder="digite seu e-mail aqui" required /><br /><br/>
+
+          <legend>Produto/Serviço</legend>
+          <select id="produto/servico" required>
+            <option value="paes tradicionais">Pães Tradicionais</option>
+            <option value="doces e bolos">Doces e Bolos</option>
+            <option value="salgados">Salgados</option>
+            <option value="atendimento">Atendimento</option>
+            <option value="ambiente">Ambiente</option>
+            <option value="precos">Preços</option><br/><br/>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Avaliação Geral</legend>
+          <label><input type="radio" name="avaliacao geral" value="excelente">Excelente</label>
+          <label><input type="radio" name="avaliacao geral" value="bom">Bom</label>
+          <label><input type="radio" name="avaliacao geral" value="regular">Regular</label>
+          <label><input type="radio" name="avaliacao geral" value="ruim">Ruim</label><br/><br/>
+
+          <label for="comentarios">Comentários:</label>
+          <textarea id="comentarios" rows="4"></textarea><br /><br />
+
+          <legend>Recomendaria para amigos?</legend>
+          <input type="checkbox" name="sim[]" value="sim">Sim<br/>
+          <input type="checkbox" name="nao[]" value="nao">Não<br/><br/>
+
+          <legend>Autoriza publicação do depoimento? </legend>
+          <input type="checkbox" name="sim[]" value="sim">Sim<br/>
+          <input type="checkbox" name="nao[]" value="nao">Não<br/><br/>
+
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

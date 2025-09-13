@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <style>
+        body {
+    background-color: #FFF8DC;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    color: #654321;
+    font-family: Brush Script MT;
+    font-size: 60px;
+}
+
+header img {
+    text-align: center;
+    display: block;
+    margin: auto;
+
+}
+
+header {
+    margin: 15px;
+    background-color: #DAA520;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 50px;
+    align-items: center;
+}
+
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #654321;
+}
+
+
+a:hover {
+    background-color: green;
+    color: azure;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+}
+
+.titulo-formulario {
+  color: #654321;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+form {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: gray;
+}
+
+label {
+  font-family: white;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+legend {
+  font-size: 40px;
+}
+
+input [type="text"],
+input [type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+  input [type="submit" value="Enviar"]{
+    color: green;
+  }
+ 
+button {
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Padaria ¨ Sidnei ¨</h1>
+    <!-- <img src="./images/ai-generated-9426385_640.png" width="150" alt="Logo da Padaria" />-->
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+          <li><a href="./pedidos.html">Pedidos</a></li>
+          <li><a href="./feedback.html">Feedback</a></li>
+          <li><a href="./cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="titulo-formulario">Formulario Cadastro/Newsletter</h1>
+      <form>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <label for="nomeCompleto">Nome Completo:</label>
+          <input type="text" id="nomeCompleto" required /><br /><br >
+
+          <label for="E-mail">E-mail:</label>
+          <input type="email" name="e-mail" placeholder="digite seu e-mail aqui" required /><br /><br/>
+        
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required /><br /><br/>
+
+          <label for="nascimento">Data de Nascimento:</label>
+          <input type="date" id="nascimento" required /><br/><br/>
+        </fieldset>
+
+        <fieldset>
+          <legend>Endereço</legend>
+          <label for="rua">Rua:</label>
+          <input type="text" id="rua" name="rua"><br/><br/>
+              
+          <label for="numero">Numero:</label>
+          <input type="number" id="numero" required/><br/><br/>
+
+          <label for="bairro">Bairro:</label>
+          <input type="text" id="bairro" required /><br /><br >
+
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" required pattern="[0-9] {5} [0-9] {3}"><br/><br/>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferencias</legend>
+          <input type="checkbox" name="paes artesanais[]" value="paes artezanais">Pães Artezanais<br/>
+          <input type="checkbox" name="doces e bolos[]" value="doces e bolos">Doces e Bolos<br/>
+          <input type="checkbox" name="salgados[]" value="salgados">Salgados<br/>
+          <input type="checkbox" name="produtos diet/light[]" value="produtos diet/light">Produtos Diet/Light<br/>
+          <input type="checkbox" name="produtos integrais[]" value="produtos integrais">Produtos Integrais<br/>
+
+          <label> <button type="submit">Enviar</button></label>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
