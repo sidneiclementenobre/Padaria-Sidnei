@@ -5,130 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pedidos</title>
     <style>
-        body {
-    background-color: #FFF8DC;
-    color: white;
-    font-family: "Poppins", sans-serif;
-}
+      h1 {
+        color: #654321;
+        font-family: Brush Script MT;
+        font-size: 60px;
+      }
 
-h1 {
-    color: #654321;
-    font-family: Brush Script MT;
-    font-size: 60px;
-}
+      header img {
+        text-align: center;
+        display: block;
+        margin: auto;
+      }
 
-header img {
-    text-align: center;
-    display: block;
-    margin: auto;
+      header {
+        margin: 15px;
+        background-color: #daa520;
+        padding: 20px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
 
-}
+      header ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+        height: 50px;
+        align-items: center;
+      }
 
-header {
-    margin: 15px;
-    background-color: #DAA520;
-    padding: 20px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+      a {
+        font-size: 20px;
+        text-decoration: none;
+        color: #654321;
+      }
 
-}
+      a:hover {
+        background-color: green;
+        color: azure;
+        padding: 5px;
+        border-radius: 10px;
+      }
 
+      nav {
+        justify-content: center;
+        display: flex;
+      }
 
+      .titulo-formulario {
+        color: #654321;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 30px;
+      }
 
-header ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    width: 600px;
-    height: 50px;
-    align-items: center;
-}
+      .titulo-formulario2 {
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 30px;
+      }
 
+      form {
+        width: 80%;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: gray;
+        color: white;
+      }
 
-a {
-    font-size: 20px;
-    text-decoration: none;
-    color: #654321;
-}
+      legend {
+        font-size: 40px;
+      }
 
+      input [type="text"],
+      input [type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
 
-a:hover {
-    background-color: green;
-    color: azure;
-    padding: 5px;
-    border-radius: 10px;
-}
+      input [type="submit"],
+      [value="Enviar"] {
+        color: green;
+      }
 
-nav {
-    justify-content: center;
-    display: flex;
-}
+      button {
+        background-color: green;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      
+      /* Abaixo estilo do calcular valor dos pediodos */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff8dc;
+        padding: 20px;
+      }
 
-.titulo-formulario {
-  color: #654321;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-}
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: gray;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px white;
+        color: white;
+      }
 
-form {
-  width: 80%;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 8px;
-  background-color: gray;
-}
+      .pedido-form,
+      .resumo-pedido {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+      }
 
-label {
-  font-family: white;
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  font-size: 30px;
-}
+      .item,
+      .entrega-info {
+        margin-bottom: 15px;
+      }
 
-.tamanho {
-  justify-content: space-between;
-}
+      label {
+        display: inline-block;
+        width: 120px;
+      }
 
-legend {
-  font-size: 40px;
-}
+      input[type="number"] {
+        width: 80px;
+        padding: 5px;
+      }
 
-input [type="text"],
-input [type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
+      button {
+        padding: 10px 15px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 
-input [type="submit"],[ value="Enviar"]{
-  color: green;
-}
- 
-button {
-  background-color: green;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-
-}
-
+      button:hover {
+        background-color: #218838;
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1> ¨ Padaria Sidnei ¨ </h1>
-    <!-- <img src="./images/ai-generated-9426385_640.png" width="150" alt="Logo da Padaria" />-->
+      <h1>¨ Padaria Sidnei ¨</h1>
+      <!-- <img src="./images/ai-generated-9426385_640.png" width="150" alt="Logo da Padaria" />-->
       <nav>
         <ul>
           <li><a href="./index.html">Home</a></li>
@@ -146,42 +180,129 @@ button {
           <legend>Dados do Cliente</legend>
           <label for="nomeCompleto">Nome Completo:</label>
           <input type="text" id="nomeCompleto" required /><br /><br />
-          
+
           <label for="telefone">Telefone:</label>
-          <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required /><br /><br />
-        
+          <input
+            type="tel"
+            id="telefone"
+            placeholder="(XX) XXXXX-XXXX"
+            required
+          /><br /><br />
+
           <label for="E-mail">E-mail:</label>
-          <input type="email" name="e-mail" placeholder="digite seu e-mail aqui" required /><br /><br />
+          <input
+            type="email"
+            name="e-mail"
+            placeholder="digite seu e-mail aqui"
+            required
+          /><br /><br />
         </fieldset>
-  
+
         <fieldset>
-          <legend>Sabor/Recheio</legend>
+          <legend>BOLO/Sabor/Recheio</legend>
           <select id="sabor/recheio">
             <option value="chocolate">Chocolate</option>
             <option value="morango">Morango</option>
-            <option value="baunilha">Baunilha</option>
-          </select><br /><br />
-  
+            <option value="baunilha">Baunilha</option></select
+          ><br /><br />
+
           <label for="tamanho">Tamanho:</label>
-          <label><input type="radio" name="tamanho" value="pequeno" />Pequeno</label>
-          <label><input type="radio" name="tamanho" value="medio" />Medio</label>
-          <label><input type="radio" name="tamanho" value="grande" />Grande</label><br /><br />
-  
+          <label
+            ><input type="radio" name="tamanho" value="pequeno" />Pequeno</label
+          >
+          <label
+            ><input type="radio" name="tamanho" value="medio" />Medio</label
+          >
+          <label
+            ><input type="radio" name="tamanho" value="grande" />Grande</label
+          ><br /><br />
+
           <label for="data de entrega">Data de Entrega:</label>
           <input type="date" id="data de entrega" required />
         </fieldset>
-  
+
         <fieldset>
           <legend>Informações Adicionais</legend>
           <label for="observacoes especiais">Observações especiais:</label>
           <textarea id="observacoes" rows="4"></textarea><br /><br />
-  
+
           <label for="orcamento maximo">Orçamento Maximo:</label>
           <input type="number" id="orcamento maximo" />
-  
+
           <button type="submit">Enviar</button>
         </fieldset>
       </form>
     </main>
+    <div class="container">
+      <h1 class="titulo-formulario2">Calcular Valor dos Pedidos</h1>
+      <div class="pedido-form">
+        <h2>Seu Pedido</h2>
+        <div class="item">
+          <label for="item1-price">Preço do Item 1:</label>
+          <input type="number" id="item1-price" value="10.00" step="0.01" />
+          <label for="item1-qty">Quantidade:</label>
+          <input type="number" id="item1-qty" value="1" min="1" />
+        </div>
+        <div class="item">
+          <label for="item2-price">Preço do Item 2:</label>
+          <input type="number" id="item2-price" value="25.50" step="0.01" />
+          <label for="item2-qty">Quantidade:</label>
+          <input type="number" id="item2-qty" value="1" min="1" />
+        </div>
+
+        <h2>Entrega</h2>
+        <div class="entrega-info">
+          <label for="distance">Distância (em km):</label>
+          <input type="number" id="distance" value="5" step="0.1" />
+        </div>
+
+        <button onclick="calcularTotal()">Calcular Total</button>
+      </div>
+
+      <div class="resumo-pedido">
+        <h2>Resumo do Pedido</h2>
+        <p>Subtotal: R$ <span id="subtotal"></span></p>
+        <p>Frete: R$ <span id="frete"></span></p>
+        <p>
+          <strong>Total Geral: R$ <span id="total-geral"></span></strong>
+        </p>
+      </div>
+    </div>
+    <script>
+      function calcularTotal() {
+        // Obter os valores dos inputs
+        const item1Price = parseFloat(
+          document.getElementById("item1-price").value
+        );
+        const item1Qty = parseInt(document.getElementById("item1-qty").value);
+        const item2Price = parseFloat(
+          document.getElementById("item2-price").value
+        );
+        const item2Qty = parseInt(document.getElementById("item2-qty").value);
+        const distancia = parseFloat(document.getElementById("distance").value);
+
+        // Calcular o subtotal
+        const subtotal = item1Price * item1Qty + item2Price * item2Qty;
+
+        // Calcular o frete com base na distância
+        // Exemplo: R$ 2,00 por km
+        const valorFretePorKm = 2.0;
+        const frete = distancia * valorFretePorKm;
+
+        // Calcular o total geral
+        const totalGeral = subtotal + frete;
+
+        // Exibir os resultados na página
+        document.getElementById("subtotal").textContent = subtotal.toFixed(2);
+        document.getElementById("frete").textContent = frete.toFixed(2);
+        document.getElementById("total-geral").textContent =
+          totalGeral.toFixed(2);
+      }
+
+      // Chamar a função de cálculo ao carregar a página para exibir os valores iniciais
+      document.addEventListener("DOMContentLoaded", () => {
+        calcularTotal();
+      });
+    </script>
   </body>
 </html>
