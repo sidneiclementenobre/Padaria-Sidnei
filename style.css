@@ -301,10 +301,6 @@ footer {
 /* responsividade */
 @media screen and (max-width: 768px) {
 
-    body {
-        flex-direction: column;
-    }
-
     .image-grid {
         grid-template-columns: repeat(2, 1fr);
     }
