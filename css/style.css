@@ -172,7 +172,8 @@ nav {
 
 .image-grid img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -298,10 +299,7 @@ footer {
 }
 
 /* responsividade */
-@media(max-width: 768px) {
-    body {
-        background-color: blue;
-    }
+@media screen and (max-width: 768px) {
 
     .image-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -312,7 +310,7 @@ footer {
     }
 }
 
-@media(max-width: 535px) {
+@media screen and (max-width: 535px) {
     .image-grid {
         grid-template-columns: repeat(1, 1fr);
     }
